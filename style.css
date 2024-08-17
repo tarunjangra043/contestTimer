@@ -1,0 +1,121 @@
+/* styles.css */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #1d1d23;
+  color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+.timer-app {
+  width: 500px;
+  margin: 50px auto;
+  padding: 20px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.timer-input {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #39393e;
+  height: 60px;
+  padding: 20px;
+  border-radius: 20px;
+}
+
+.timer-input input {
+  width: 50px;
+  height: 50px;
+  margin: 0 10px;
+  border: none;
+  text-align: center;
+  outline: none;
+  background-color: #39393e;
+  color: #fff;
+  font-size: 20px;
+}
+
+.timer-input input::placeholder {
+  font-size: 20px;
+  text-decoration: underline;
+  text-align: center;
+  color: #fff;
+}
+
+.timer-input input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.timer-input button {
+  padding: 10px 40px;
+  background-color: #f0f757;
+  color: #000;
+  border: none;
+  cursor: pointer;
+  border-radius: 40px;
+}
+
+.timer-app .active-timers {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.timer-app .active-timers .current-timer {
+  background-color: #39393e;
+  width: fit-content;
+  padding: 10px 50px;
+  border-radius: 20px;
+}
+
+.active-timers ul {
+  list-style-type: none;
+  padding: 0;
+  width: 100%;
+}
+
+.active-timers li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+  padding: 10px;
+  background-color: #39393e;
+  border: 1px solid #d4e2f1;
+  color: #fff;
+  border: none;
+  border-radius: 15px;
+  height: 35px;
+}
+
+.active-timers ul li span {
+  font-size: 30px;
+}
+
+.stopButton {
+  padding: 10px 20px;
+  background-color: #39393e !important;
+  color: white !important;
+  border-radius: 20px;
+  border: none;
+}
+
+.active-timers ul li button {
+  padding: 10px 20px;
+  background-color: #f0f757;
+  color: #000;
+  border-radius: 20px;
+  border: none;
+}
+
+.timer-end span {
+  font-size: 30px !important;
+}

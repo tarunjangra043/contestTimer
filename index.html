@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Multi-Timer Application</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="timer-app" id="container">
+      <h1>Multiple Timer App</h1>
+      <div class="timer-input">
+        <p>Set Time:</p>
+        <input type="number" id="hours" placeholder="hh" min="0" />
+        <p>:</p>
+        <input type="number" id="minutes" placeholder="mm" min="0" />
+        <p>:</p>
+        <input type="number" id="seconds" placeholder="ss" min="0" />
+        <button id="start-timer">Set</button>
+      </div>
+
+      <div class="active-timers">
+        <p class="current-timer">Current Timers</p>
+        <ul id="timer-list"></ul>
+      </div>
+    </div>
+
+    <audio id="timer-end-sound" src="alarm-clock-short-6402.mp3"></audio>
+
+    <script src="script.js"></script>
+  </body>
+</html>
